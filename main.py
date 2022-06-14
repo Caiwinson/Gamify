@@ -1,7 +1,7 @@
 #Import module
 import discord
 from discord.ext import commands
-import config
+import tool.config import config
 import os
 import requests
 from keep_alive import keep_alive
@@ -12,7 +12,7 @@ intents = discord.Intents.default()
 intents.guilds=True
 intents.messages=True
 intents.members=True
-client=commands.Bot(command_prefix=config["prefix"], intents=intents)
+client=commands.Bot(command_prefix=config["Client"]["prefix"], intents=intents)
 DiscordComponents(client)
 #load cogs
 def load():
@@ -28,4 +28,4 @@ async def on_ready():
     print(client.user)
 #run client 
 if __name__=='__main__':
-    client.run(config["token"])
+    client.run(config["Client"]["token"])
