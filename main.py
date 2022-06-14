@@ -2,6 +2,7 @@
 import discord
 from discord.ext import commands
 from tool.config import config
+import os
 from discord_components import DiscordComponents
 
 #discord client
