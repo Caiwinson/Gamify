@@ -2,8 +2,6 @@
 import discord
 from discord.ext import commands
 from tool.config import config
-import os
-import requests
 from discord_components import DiscordComponents
 
 #discord client
