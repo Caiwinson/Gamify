@@ -15,7 +15,6 @@ DiscordComponents(client)
 #load cogs
 def load():
     cogs=[x.replace(".py", "") for x in os.listdir("Cogs")]
-    cogs.remove("__pycache__")
     for cog in cogs:
         try:
             client.load_extension("Cogs."+cog)
