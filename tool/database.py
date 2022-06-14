@@ -1,7 +1,6 @@
 from firebase_admin import credentials, db, initialize_app
-import requests
-from os import getenv
-cred=credentials.Certificate(requests.get(getenv("REPLIT_DB_URL")+"/cred").json())
+from tool.config import conmfig
+cred=credentials.Certificate(config["Firebase"]["location"]).json())
 initialize_app(cred, {"databaseURL": "https://gamify-f82c6-default-rtdb.asia-southeast1.firebasedatabase.app"})
 
 cached={}
