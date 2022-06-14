@@ -3,6 +3,8 @@
 Gamify is a Fast and Simple verification bot,
 whom you verify with random games given.
 
+# Setup
+will be added in the future
 ## List of games you can play:
 -Colour Memory\
 -Popit\
