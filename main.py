@@ -1,7 +1,7 @@
 #Import module
 import discord
 from discord.ext import commands
-import tool.config import config
+from tool.config import config
 import os
 import requests
 from keep_alive import keep_alive
@@ -16,7 +16,7 @@ client=commands.Bot(command_prefix=config["Client"]["prefix"], intents=intents)
 DiscordComponents(client)
 #load cogs
 def load():
-    cogs=[x.replace(".py", "") for x in os.listdir("Cogs")
+    cogs=[x.replace(".py", "") for x in os.listdir("Cogs")]
     for cog in cogs:
         try:
             client.load_extension("Cogs."+cog)
