@@ -4,7 +4,6 @@ from discord.ext import commands
 from tool.config import config
 import os
 import requests
-from keep_alive import keep_alive
 from discord_components import DiscordComponents
 
 #discord client
@@ -17,6 +16,7 @@ DiscordComponents(client)
 #load cogs
 def load():
     cogs=[x.replace(".py", "") for x in os.listdir("Cogs")]
+    cogs.remove("__pycache__")
     for cog in cogs:
         try:
             client.load_extension("Cogs."+cog)
