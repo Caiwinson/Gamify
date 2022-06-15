@@ -1,0 +1,4 @@
+discord
+discord_component
+configparser
+firebase_admin
