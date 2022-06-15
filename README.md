@@ -4,7 +4,16 @@ Gamify is a Fast and Simple verification bot,
 whom you verify with random games given.
 
 # Setup
-will be added in the future
+Download and install [Python](https://www.python.org/downloads/)\
+Open Command Prompt and paste this
+```
+pip install -r requirements.txt
+```
+Open `config.ini` with notepad(or other text editor)\
+and paste the [Bot token](https://www.writebots.com/discord-bot-token/)
+Go to https://www.freecodecamp.org/news/how-to-get-started-with-firebase-using-python/ \
+Create a project in [Firebase](https://console.firebase.google.com/u/0/)\
+and retrive serviceicon.json and databaseUrl, [Guide](https://firebase.google.com/docs/admin/setup)
 ## List of games you can play:
 -Colour Memory\
 -Popit\
